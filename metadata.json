@@ -1,0 +1,6 @@
+
+{
+  "name": "Taigour's E-Sports Pro (Supabase Edition)",
+  "description": "A high-performance e-sports tournament platform with real-time cloud database synchronization, admin panel, and local fallback mode.",
+  "requestFramePermissions": []
+}

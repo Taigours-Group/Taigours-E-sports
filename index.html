@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taigour's E-Sports - Forge Your Legacy</title>
+    <link rel="icon" href="https://res.cloudinary.com/dbjjzyrr3/image/upload/v1768567786/tiger-logo_jcf2zj.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#00d4ff',
+              accent: '#ff0080',
+              secondary: '#8000ff',
+              tertiary: '#00ff80',
+              'bg-dark': '#0b0b0f',
+              'bg-card': '#15151a'
+            },
+            fontFamily: {
+              orbitron: ['Orbitron', 'sans-serif'],
+              rajdhani: ['Rajdhani', 'sans-serif']
+            },
+            animation: {
+              'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'glitch': 'glitch 2s infinite',
+              'glow': 'glow 2s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              glitch: {
+                '0%, 100%': { transform: 'translate(0)' },
+                '33%': { transform: 'translate(-2px, 2px)' },
+                '66%': { transform: 'translate(2px, -2px)' },
+              },
+              glow: {
+                from: { 'box-shadow': '0 0 5px #00d4ff, 0 0 10px #00d4ff' },
+                to: { 'box-shadow': '0 0 20px #00d4ff, 0 0 30px #00d4ff' }
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0b0b0f;
+        color: white;
+        font-family: 'Rajdhani', sans-serif;
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+      }
+      .glass {
+        background: rgba(0, 212, 255, 0.03);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(0, 212, 255, 0.1);
+      }
+      .neon-border {
+        position: relative;
+        background: rgba(21, 21, 26, 0.9);
+        border-radius: 4px;
+      }
+      .neon-border::after {
+        content: '';
+        position: absolute;
+        inset: -1.5px;
+        background: linear-gradient(45deg, #00d4ff, #ff0080, #8000ff);
+        z-index: -1;
+        border-radius: 5px;
+        opacity: 0.2;
+        transition: opacity 0.3s, filter 0.3s;
+      }
+      .neon-border:hover::after {
+        opacity: 1;
+        filter: blur(2px);
+      }
+      .cyber-button {
+        clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+        transition: all 0.3s;
+      }
+      .cyber-button:hover {
+        transform: translate(-2px, -2px);
+        box-shadow: 4px 4px 0px #ff0080;
+      }
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b0b0f;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #00d4ff, #8000ff);
+        border-radius: 10px;
+      }
+      .custom-scrollbar::-webkit-scrollbar {
+        width: 4px;
+      }
+      .text-glow {
+        text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.12.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.jsx"></script>
+</body>
+</html>
