@@ -145,7 +145,7 @@ export const TournamentCard = ({ t, registrations }) => {
 
           <div className="mb-3 md:mb-6 space-y-1 md:space-y-2">
             <div className="flex justify-between items-center text-[6px] md:text-[9px] font-black uppercase tracking-widest">
-                <span className="text-gray-500">ENLISTED</span>
+                <span className="text-gray-500">REGISTERED</span>
                 <span className={slotsLeft <= 5 ? 'text-pink animate-pulse' : 'text-tertiary'}>
                     {slotsLeft === 0 ? 'FULL' : `${slotsLeft} LEFT`}
                 </span>
@@ -162,7 +162,7 @@ export const TournamentCard = ({ t, registrations }) => {
             <Link to={`/tournament/${t.id}`} className="relative block w-full group/btn overflow-hidden">
                 <div className="absolute inset-0 bg-primary translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300"></div>
                 <div className="relative w-full py-2 md:py-4 bg-white/5 border border-white/10 group-hover/btn:border-primary text-center font-orbitron font-black text-[8px] md:text-[10px] uppercase tracking-widest md:tracking-[0.3em] transition-all group-hover/btn:text-dark">
-                    {slotsLeft === 0 ? 'INTEL' : 'ENLIST'} <i className="fa-solid fa-arrow-right-long ml-1 md:ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
+                    {slotsLeft === 0 ? 'INTEL' : 'REGISTER'} <i className="fa-solid fa-arrow-right-long ml-1 md:ml-2 group-hover/btn:translate-x-1 transition-transform"></i>
                 </div>
             </Link>
           </div>
