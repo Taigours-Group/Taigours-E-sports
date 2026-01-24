@@ -148,7 +148,7 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
               <i className="fas fa-check text-bg-dark text-sm"></i>
             </div>
             <div className="flex-1 overflow-hidden">
-              <p className="font-orbitron font-black text-white text-[10px] uppercase tracking-widest truncate">Enlistment Confirmed</p>
+              <p className="font-orbitron font-black text-white text-[10px] uppercase tracking-widest truncate">Registration Confirmed</p>
               <p className="font-rajdhani text-gray-300 text-xs truncate">Registration Successful!</p>
             </div>
             <button onClick={() => setShowToast(false)} className="text-white/40 hover:text-white transition-colors shrink-0">
@@ -278,7 +278,7 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
                     onClick={() => setShowRegModal(true)}
                     className={`w-full py-4 md:py-5 font-orbitron font-black text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] transition-all cyber-button ${isSoldOut ? 'bg-gray-800 text-gray-500 cursor-not-allowed border-gray-700' : 'bg-primary text-bg-dark shadow-[0_0_20px_rgba(0,212,255,0.2)] hover:shadow-[0_0_40px_rgba(0,212,255,0.3)]'}`}
                   >
-                    {isSoldOut ? 'SLOTS FULL' : 'ENLIST NOW'}
+                    {isSoldOut ? 'SLOTS FULL' : 'REGISTER NOW'}
                   </button>
                   <p className={`text-center text-[9px] font-bold uppercase tracking-[0.1em] md:tracking-[0.2em] ${slotsLeft <= 5 ? 'text-pink animate-pulse' : 'text-gray-500'}`}>
                     {isSoldOut ? 'Registration Closed' : `${slotsLeft} sectors remaining`}
@@ -310,7 +310,7 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
             {!registrationSuccess ? (
               <>
                 <div className="text-center mb-6 md:mb-10">
-                  <h3 className="text-xl md:text-3xl font-orbitron font-black text-white uppercase tracking-tight">ENLISTMENT <span className="text-primary">PORTAL</span></h3>
+                  <h3 className="text-xl md:text-3xl font-orbitron font-black text-white uppercase tracking-tight">REGISTRATION <span className="text-primary">PORTAL</span></h3>
                   <p className="text-gray-500 font-rajdhani uppercase tracking-[0.3em] text-[8px] md:text-[10px] mt-1 md:mt-2">Initialize warrior authentication</p>
                 </div>
                 <form onSubmit={handleRegistrationSubmit} className="space-y-4 md:space-y-6 font-rajdhani">
@@ -346,7 +346,7 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
                   </div>
                   <button type="submit" className="w-full py-4 md:py-5 bg-primary text-bg-dark font-orbitron font-black text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] shadow-[0_0_20px_rgba(0,212,255,0.2)] hover:shadow-[0_0_40px_rgba(0,212,255,0.4)] transition-all flex items-center justify-center gap-2">
                     <i className="fas fa-file-signature"></i>
-                    CONFIRM ENLISTMENT
+                    CONFIRM REGISTRATION
                   </button>
                 </form>
               </>
@@ -356,7 +356,7 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
                   <i className="fas fa-check text-2xl md:text-3xl text-tertiary"></i>
                 </div>
                 <h3 className="text-2xl md:text-3xl font-orbitron font-black text-white uppercase tracking-tighter mb-2">MISSION <span className="text-tertiary">AUTHORIZED</span></h3>
-                <p className="text-gray-400 font-rajdhani text-base md:text-lg mb-6 md:mb-8">Enlistment confirmed for <span className="text-primary font-bold">{tournament.title}</span></p>
+                <p className="text-gray-400 font-rajdhani text-base md:text-lg mb-6 md:mb-8">Registration confirmed for <span className="text-primary font-bold">{tournament.title}</span></p>
                 
                 <div className="bg-white/5 border border-white/10 rounded-lg p-5 md:p-6 mb-6 md:mb-8 text-left space-y-3 font-rajdhani text-sm">
                   <div className="flex justify-between border-b border-white/5 pb-2">
