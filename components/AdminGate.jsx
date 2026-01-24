@@ -1,7 +1,7 @@
 
 import React, { useState, useEffect, useCallback } from 'react';
 
-const ADMIN_PASSWORD = '123';
+const ADMIN_PASSWORD = 'Taigours2026';
 const SESSION_TIMEOUT = 30 * 60 * 1000; // 30 minutes in milliseconds
 
 export default function AdminGate({ children }) {
