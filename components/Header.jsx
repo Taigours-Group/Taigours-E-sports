@@ -39,7 +39,7 @@ const Header = () => {
               <span className="font-orbitron font-black text-white text-lg md:text-xl tracking-tighter leading-none flex items-center gap-1.5">
                 TAIGOUR <span className="w-1.5 h-1.5 bg-tertiary rounded-full animate-pulse shadow-[0_0_8px_#00ff80]"></span>
               </span>
-              <span className="text-primary font-orbitron font-bold text-[8px] md:text-[10px] tracking-[0.4em] uppercase leading-none mt-1">E-Sports Elite</span>
+              <span className="text-primary font-orbitron font-bold text-[8px] md:text-[10px] tracking-[0.4em] uppercase leading-none mt-1">E-Sports</span>
             </div>
           </Link>
 
@@ -59,11 +59,7 @@ const Header = () => {
             ))}
           </div>
 
-          <div className="flex items-center gap-4">
-             <Link to="/admin" className="w-10 h-10 flex items-center justify-center rounded-full border border-white/5 bg-white/5 text-gray-400 hover:text-primary transition-all">
-                <i className="fa-solid fa-user-shield text-sm"></i>
-             </Link>
-          </div>
+          
         </div>
       </nav>
 
