@@ -1,0 +1,7 @@
+{
+  "name": "Taigour's E-Sports Elite",
+  "description": "A high-performance gaming tournament platform for Free Fire, PUBG, and Ludo champions.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
