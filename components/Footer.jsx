@@ -15,7 +15,7 @@ const Footer = () => (
           <a href="https://discord.gg/f2bgpfNP" className="hover:text-primary transition-all text-white" target="_blank"><i className="fab fa-discord"></i></a>
           <a href="https://www.facebook.com/profile.php?id=61572485841102" className="hover:text-primary transition-all text-white" target="_blank"><i className="fab fa-facebook"></i></a>
           <a href="https://www.youtube.com/@TaigoursE-Sports" className="hover:text-primary transition-all text-white" target="_blank"><i className="fab fa-youtube"></i></a>
-          <a href="#" className="hover:text-primary transition-all text-white" target="_blank"><i className="fab fa-instagram"></i></a>
+          <a href="https://chat.whatsapp.com/HhUd5QQNVDB5xRA67nMB0n" className="hover:text-primary transition-all text-white" target="_blank"><i className="fab fa-whatsapp"></i></a>
         </div>
       </div>
       <div>
