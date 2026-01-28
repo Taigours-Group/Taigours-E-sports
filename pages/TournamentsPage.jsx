@@ -99,7 +99,7 @@ export const TournamentCard = ({ t, registrations }) => {
           
           <div className="absolute top-1.5 left-1.5 md:top-4 md:left-4 z-20">
             <span className="bg-primary/20 backdrop-blur-md text-primary border border-primary/20 px-1 py-0.5 md:px-3 md:py-1 rounded-md text-[6px] md:text-[9px] font-orbitron font-black uppercase tracking-[0.05em] md:tracking-[0.2em] shadow-lg">
-              {t.game?.split(' ')[0] || t.game}
+              {t.game}
             </span>
           </div>
           
@@ -239,7 +239,7 @@ const TournamentsPage = ({ tournaments, registrations }) => {
           ))}
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-5 gap-3 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-3 md:gap-8">
           {filtered.length > 0 ? filtered.map(t => (
             <TournamentCard key={t.id} t={t} registrations={registrations} />
           )) : (
