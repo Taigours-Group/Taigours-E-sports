@@ -64,7 +64,7 @@ const Header = () => {
       </nav>
 
       {/* Mobile Tactical Bottom Bar */}
-      <div className="md:hidden fixed bottom-0 left-0 w-full z-[100] glass border-t border-white/10 mobile-safe-bottom">
+      <div className="md:hidden fixed bottom-0 left-0 w-full z-[100] bottom-nav-glass mobile-safe-bottom">
         <div className="flex justify-around items-center h-16">
           {navLinks.map((link) => (
             <Link
