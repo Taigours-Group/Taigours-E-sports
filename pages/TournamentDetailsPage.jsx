@@ -335,13 +335,13 @@ const TournamentDetailsPage = ({ tournaments, onRegister, registrations }) => {
                         <input type="email" required placeholder="warrior@nexus.com" className="w-full bg-white/5 border border-white/10 p-3 md:p-4 text-white focus:border-primary outline-none transition-all placeholder:text-white/20 text-sm" value={regForm.playeremail} onChange={e => setRegForm({...regForm, playeremail: e.target.value})} />
                       </div>
                       <div className="group">
-                        <label className="text-[9px] md:text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1 block group-focus-within:text-primary transition-colors">WhatsApp Link</label>
+                        <label className="text-[9px] md:text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1 block group-focus-within:text-primary transition-colors">WhatsApp Number</label>
                         <input type="tel" required placeholder="+977-98XXXXXXXX" className="w-full bg-white/5 border border-white/10 p-3 md:p-4 text-white focus:border-primary outline-none transition-all placeholder:text-white/20 text-sm" value={regForm.playercontact} onChange={e => setRegForm({...regForm, playercontact: e.target.value})} />
                       </div>
                     </div>
                     <div className="group">
-                      <label className="text-[9px] md:text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1 block group-focus-within:text-primary transition-colors">System UID</label>
-                      <input type="text" required placeholder="Character ID" className="w-full bg-white/5 border border-white/10 p-3 md:p-4 text-white focus:border-primary outline-none transition-all placeholder:text-white/20 font-mono text-sm" value={regForm.gameuid} onChange={e => setRegForm({...regForm, gameuid: e.target.value})} />
+                      <label className="text-[9px] md:text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-1 block group-focus-within:text-primary transition-colors">Game UID</label>
+                      <input type="text" required placeholder="Game ID (i.e: 5498852398xxx955)" className="w-full bg-white/5 border border-white/10 p-3 md:p-4 text-white focus:border-primary outline-none transition-all placeholder:text-white/20 font-mono text-sm" value={regForm.gameuid} onChange={e => setRegForm({...regForm, gameuid: e.target.value})} />
                     </div>
                   </div>
                   <button type="submit" className="w-full py-4 md:py-5 bg-primary text-bg-dark font-orbitron font-black text-xs md:text-sm uppercase tracking-[0.2em] md:tracking-[0.3em] shadow-[0_0_20px_rgba(0,212,255,0.2)] hover:shadow-[0_0_40px_rgba(0,212,255,0.4)] transition-all flex items-center justify-center gap-2">
