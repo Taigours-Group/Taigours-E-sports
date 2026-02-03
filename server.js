@@ -26,6 +26,8 @@ const PORT = process.env.PORT || 10000;
 app.use(cors());
 app.use(bodyParser.json());
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 // --- API Endpoints ---
 
 // Get all tournaments
@@ -698,3 +700,4 @@ app.use(express.static(path.join(__dirname, 'dist')));
 
 // --- Start server ---
 app.listen(PORT, () => console.log(`Taigour E-Sports server running on http://localhost:${PORT}`));
+
