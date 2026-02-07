@@ -8,9 +8,21 @@ export const STREAM_HIGHLIGHTS = [
 ];
 
 export const MOCK_CHAT_USERS = [
-  'ShadowStrike', 'PixelPhantom', 'LagHunter', 'BlazeRider', 'NoScopeKing', 'GhostByte', 'TacticalTurtle'
+  'ShadowStrike', 
+  'PixelPhantom', 
+  'LagHunter', 
+  'BlazeRider', 
+  'NoScopeKing', 
+  'GhostByte', 
+  'TacticalTurtle'
 ];
 
 export const MOCK_MESSAGES = [
-  'Insane clutch! 😱', 'That snipe tho 👀', 'GG WP 💯', 'Amazing gameplay!', 'Let\'s go! 🔥', 'Who saw that glitch?', 'Next match when?'
+  'Insane clutch! 😱', 
+  'That snipe tho 👀', 
+  'GG WP 💯', 
+  'Amazing gameplay!', 
+  'Let\'s go! 🔥', 
+  'Who saw that glitch?', 
+  'Next match when?'
 ];
