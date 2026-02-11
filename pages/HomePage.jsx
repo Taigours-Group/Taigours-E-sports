@@ -10,7 +10,7 @@ const HomePage = ({ tournaments, leaderboard, registrations }) => {
   return (
     <div className="flex flex-col bg-bg-dark">
       {/* Cinematic Hero */}
-      <section className="relative min-h-[90vh] flex items-center justify-center px-4 overflow-hidden pt-20">
+      <section className="relative min-h-[90vh] mb-10 flex items-center justify-center px-4 overflow-hidden pt-20">
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-b from-bg-dark/40 via-bg-dark/80 to-bg-dark z-10"></div>
           <img 
